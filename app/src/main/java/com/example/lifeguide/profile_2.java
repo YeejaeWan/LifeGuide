@@ -1,6 +1,8 @@
 package com.example.lifeguide;
 
-public class profile_2 {
+import java.io.Serializable;
+
+public class profile_2 implements Serializable {
     String s;
     String activity;
     String type;
