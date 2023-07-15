@@ -9,15 +9,17 @@ public class profile_2 implements Serializable {
     String h;
     String cost;
     String j;
-    public profile_2(String s, String activity, String type, String h, String cost)
+    String title;
+    public profile_2(String title, String s, String activity, String type, String h, String cost)
     {
         this.s = s;
         this.activity = activity;
         this.type = type;
         this.h = h;
         this.cost = cost;
+        this.title = title;
     }
-    public profile_2(String s, String activity, String type, String h, String j , String cost)
+    public profile_2(String title, String s, String activity, String type, String h, String j , String cost)
     {
         this.s = s;
         this.activity = activity;
@@ -25,6 +27,7 @@ public class profile_2 implements Serializable {
         this.h = h;
         this.cost = cost;
         this.j = j;
+        this.title = title;
     }
 
     public String getS() {
@@ -49,6 +52,14 @@ public class profile_2 implements Serializable {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public void setActivity(String activity) {

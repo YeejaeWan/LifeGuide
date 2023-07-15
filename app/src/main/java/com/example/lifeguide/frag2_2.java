@@ -19,6 +19,7 @@ public class frag2_2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.frag2_1);
 
+        TextView title = findViewById(R.id.title);
         TextView name = findViewById(R.id.name);
         TextView t2 = findViewById(R.id.textView2);
         TextView t3 = findViewById(R.id.textView3);
@@ -36,6 +37,8 @@ public class frag2_2 extends AppCompatActivity {
 
         profile_1 p1_1 = (profile_1) intent.getSerializableExtra("profile1"); /*클래스*/
         profile_2 p1_2 = (profile_2) intent.getSerializableExtra("profile2"); /*클래스*/
+
+        title.setText(p1_2.getTitle());
 
         name.setText(p1_1.getName());
         t2.setText(p1_1.getComment());
