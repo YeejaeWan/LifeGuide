@@ -11,11 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.lifeguide.frag2_2;
-import com.example.lifeguide.profile_1;
-import com.example.lifeguide.profile_2;
-import java.io.Serializable;
-
 public class Frag2 extends Fragment {
     Button button2;
     Button button3;
@@ -40,11 +35,14 @@ public class Frag2 extends Fragment {
         profile_2 p2_2 = new profile_2("멘토","여성","김유진 멘토는 연간 1000회 이상의 상담을 진행하고 있습니다", "업무 스트레스","전화",
                 "1회에 평균 2,000");
 
+        profile_1 p3_1 = new profile_1("이찬규 상담사","연락처: 02-0000-0000","이메일:counselee@lifeguide.com");
+        profile_2 p3_2 = new profile_2("전문 상담사", "남성", "청소년, 아동 심리 상담","00병원 심리상담센터 운영\n000학교 전문 심리상담사","화상 채팅","청소년 상담사 2급\n임상 심리사 2급",
+                "1회에 평균 50,000(상담 내용, 시간 별 변동 가능");
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity(), frag2_2.class);
+                Intent intent = new Intent(getActivity(), frag2_1.class);
                 intent.putExtra("profile1", p1_1);
                 intent.putExtra("profile2", p1_2);
                 startActivity(intent);
@@ -54,13 +52,23 @@ public class Frag2 extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity(), frag2_2.class);
+                Intent intent = new Intent(getActivity(), frag2_1.class);
                 intent.putExtra("profile1", p2_1);
                 intent.putExtra("profile2", p2_2);
                 startActivity(intent);
             }
         });
 
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getActivity(), frag2_2.class);
+                intent.putExtra("profile1", p3_1);
+                intent.putExtra("profile2", p3_2);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 }
