@@ -40,7 +40,7 @@ public class Frag2 extends Fragment {
                 " 1회에 평균 50,000(상담 내용, 시간 별 변동 가능)");
 
         profile_1 p4_1 = new profile_1(" 임종호 상담사", " 연락처: 041-0000-0000"," 이메일: coun@lifequid.com");
-        profile_2 p4_2 = new profile_2(" 전문 상담사", " 남성", " 청소년, 성인 심리 상담", " 00병원 청소년심리상담센터 운영"," 면담"," 청소년 상담사 1급\n임상 심리사 1급",
+        profile_2 p4_2 = new profile_2(" 전문 상담사", " 남성", " 청소년, 아동 심리 상담", " 000아동심리상담센터 운영"," 면담"," 청소년 상담사 1급\n임상 심리사 1급",
                 " 1회에 평균 80,000(상담 내용, 시간 별 변동 가능)");
         button2.setOnClickListener(new View.OnClickListener() {
             @Override

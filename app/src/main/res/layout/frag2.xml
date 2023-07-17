@@ -10,7 +10,7 @@
         android:layout_width="91dp"
         android:layout_height="26dp"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/button_border"
         android:gravity="center_horizontal"
         android:text="전문 상담사"
@@ -24,7 +24,7 @@
         android:layout_width="98dp"
         android:layout_height="26dp"
         android:layout_marginTop="73dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/button_border"
         android:gravity="center_horizontal"
         android:text="우수 상담사"
@@ -37,10 +37,10 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="200dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/line"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
@@ -55,7 +55,9 @@
             android:layout_weight="1"
             android:background="#00ff0000"
             android:drawableLeft="@drawable/profile_custom"
-            android:text="Button" />
+            android:gravity="left"
+            android:text="이재완 상담가\n힘드신 일 있으시면 숨기지 마시고 언제든지 말씀해주세요\n평점: 4.5"
+            android:textColor="#454545" />
 
         <Button
             android:id="@+id/button3"
@@ -64,14 +66,16 @@
             android:layout_weight="1"
             android:background="#00ff0000"
             android:drawableLeft="@drawable/profile_custom"
-            android:text="Button" />
+            android:text="김유진 상담가\n모든 고민과 걱정은 제게 놓고 가세요\n평점: 4.9"
+            android:textColor="#454545"
+            android:gravity="left"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="200dp"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="91dp"
@@ -89,7 +93,9 @@
             android:layout_weight="1"
             android:background="#00ff0000"
             android:drawableLeft="@drawable/profile_custom"
-            android:text="Button" />
+            android:text="이찬규 상담사\n학력: 00대학교 심리상담전공\n경력: 00병원 심리상담센터 운영"
+            android:textColor="#454545"
+            android:gravity="left" />
 
         <Button
             android:id="@+id/button9"
@@ -98,7 +104,9 @@
             android:layout_weight="1"
             android:background="#00ff0000"
             android:drawableLeft="@drawable/profile_custom"
-            android:text="Button" />
+            android:text="임종호 상담사\n학력: 000대학교 아동심리상담전공\n경력: 000아동심리상담센터 운영"
+            android:textColor="#454545"
+            android:gravity="left"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
