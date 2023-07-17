@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class frag2_2 extends AppCompatActivity {
+public class Frag2_2 extends AppCompatActivity {
     @Nullable
     @Override
     protected void onCreate(Bundle savedInstanceState) {
