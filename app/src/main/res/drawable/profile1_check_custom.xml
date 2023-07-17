@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/profile"
+        android:width="55dp"
+        android:height="55dp"
+        >
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomRightRadius="100dp"
+                android:bottomLeftRadius="100dp"
+                android:topLeftRadius="100dp"
+                android:topRightRadius="100dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/check"
+        android:width="20dp"
+        android:height="20dp"
+        >
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomRightRadius="100dp"
+                android:bottomLeftRadius="100dp"
+                android:topLeftRadius="100dp"
+                android:topRightRadius="100dp"/>
+        </shape>
+    </item>
+</layer-list>
