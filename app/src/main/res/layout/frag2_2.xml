@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="81dp"
-        android:layout_height="69dp"
+        android:layout_width="79dp"
+        android:layout_height="80dp"
         android:layout_marginStart="43dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="14dp"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="27dp"
         android:autoSizeTextType="uniform"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
@@ -62,7 +62,7 @@
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="280dp"
         android:layout_marginStart="57dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="132dp"
@@ -86,11 +86,9 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -107,15 +105,14 @@
                 android:layout_weight="1"
                 android:background="@drawable/table_custom"
                 android:gravity="center_horizontal"
-                android:text="경력" />
+                android:text="경력"
+                android:includeFontPadding="false"/>
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -136,11 +133,9 @@
 
             <TextView
                 android:id="@+id/textView16"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -161,11 +156,9 @@
 
             <TextView
                 android:id="@+id/textView17"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -186,11 +179,9 @@
 
             <TextView
                 android:id="@+id/textView18"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -211,11 +202,9 @@
 
             <TextView
                 android:id="@+id/textView19"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"

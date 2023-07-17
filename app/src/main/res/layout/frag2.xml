@@ -5,25 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:background="#00ff0000"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/view_more_icon"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="91dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="95dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="18dp"
         android:background="@drawable/button_border"
         android:gravity="center_horizontal"
         android:text="전문 상담사"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="98dp"
+        android:layout_width="0dp"
         android:layout_height="26dp"
+        android:layout_marginStart="27dp"
         android:layout_marginTop="73dp"
+        android:layout_marginEnd="216dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/button_border"
         android:gravity="center_horizontal"
@@ -31,7 +51,25 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="@+id/textView13"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="230dp"
+        android:layout_weight="1"
+        android:background="#00ff0000"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/view_more_icon"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
@@ -40,7 +78,7 @@
         android:layout_height="200dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/line"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
@@ -54,7 +92,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00ff0000"
-            android:drawableLeft="@drawable/profile_custom"
+            android:drawableLeft="@drawable/profile1_star_custom"
             android:gravity="left"
             android:text="이재완 상담가\n힘드신 일 있으시면 숨기지 마시고 언제든지 말씀해주세요\n평점: 4.5"
             android:textColor="#454545" />
@@ -65,10 +103,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00ff0000"
-            android:drawableLeft="@drawable/profile_custom"
+            android:drawableLeft="@drawable/profile1_star_custom"
+            android:gravity="left"
             android:text="김유진 상담가\n모든 고민과 걱정은 제게 놓고 가세요\n평점: 4.9"
-            android:textColor="#454545"
-            android:gravity="left"/>
+            android:textColor="#454545" />
 
     </LinearLayout>
 
@@ -78,13 +116,14 @@
         android:layout_height="200dp"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="91dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/line"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13">
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
 
         <Button
             android:id="@+id/button8"
@@ -92,10 +131,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00ff0000"
-            android:drawableLeft="@drawable/profile_custom"
+            android:drawableLeft="@drawable/profile1_check_custom"
+            android:gravity="left"
             android:text="이찬규 상담사\n학력: 00대학교 심리상담전공\n경력: 00병원 심리상담센터 운영"
-            android:textColor="#454545"
-            android:gravity="left" />
+            android:textColor="#454545" />
 
         <Button
             android:id="@+id/button9"
@@ -103,10 +142,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00ff0000"
-            android:drawableLeft="@drawable/profile_custom"
+            android:drawableLeft="@drawable/profile1_check_custom"
+            android:gravity="left"
             android:text="임종호 상담사\n학력: 000대학교 아동심리상담전공\n경력: 000아동심리상담센터 운영"
-            android:textColor="#454545"
-            android:gravity="left"/>
+            android:textColor="#454545" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

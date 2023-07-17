@@ -9,7 +9,7 @@
         android:id="@+id/title"
         android:layout_width="97dp"
         android:layout_height="22dp"
-        android:layout_marginStart="1dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="66dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="12dp"
@@ -26,7 +26,7 @@
         android:id="@+id/imageView"
         android:layout_width="79dp"
         android:layout_height="80dp"
-        android:layout_marginStart="58dp"
+        android:layout_marginStart="43dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="14dp"
         app:layout_constraintBottom_toTopOf="@+id/name"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="32dp"
         android:autoSizeTextType="uniform"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
@@ -64,7 +64,7 @@
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="280dp"
         android:layout_marginStart="57dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="25dp"
@@ -87,11 +87,9 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -113,11 +111,9 @@
 
             <TextView
                 android:id="@+id/textView5"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -138,11 +134,9 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -163,11 +157,9 @@
 
             <TextView
                 android:id="@+id/textView7"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
@@ -188,11 +180,9 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="60dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:autoSizeMinTextSize="5dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColorHighlight="#D2B8FF"
                 android:textIsSelectable="true"
