@@ -1,14 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="홈"
-        android:textSize="50dp"
-        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/sliderViewPager"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewFadingEdge"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_fading_edge"
+            app:layout_constraintBottom_toBottomOf="@id/sliderViewPager" />
+
+        <LinearLayout
+            android:id="@+id/layoutIndicators"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="130dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/viewFadingEdge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <android.widget.Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="6dp"
+                android:backgroundTint="#2974AF"
+                android:text="멘토링"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/metor_button_image"/>
+
+            <android.widget.Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#579FD8"
+                android:text="전문상담"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/expert_button_image"/>
+
+        </LinearLayout>
 
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10pt"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:text="상담후기"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/item_background"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:text=" 고민내용:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/item_background2"/>
+            <android.widget.Button
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:background="@drawable/item_background3"
+                android:drawableLeft="@drawable/person_image"
+                android:textColor="@color/white"
+                android:text="상담후기" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:text=" 고민내용:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/item_background2"/>
+            <android.widget.Button
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:background="@drawable/item_background3"
+                android:drawableLeft="@drawable/person_image"
+                android:textColor="@color/white"
+                android:text="상담후기" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:text=" 고민내용:"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/item_background2"/>
+            <android.widget.Button
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:background="@drawable/item_background3"
+                android:drawableLeft="@drawable/person_image"
+                android:textColor="@color/white"
+                android:text="상담후기" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:text=" 고민내용:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/item_background2"/>
+            <android.widget.Button
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:background="@drawable/item_background3"
+                android:drawableLeft="@drawable/person_image"
+                android:textColor="@color/white"
+                android:text="상담후기" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
