@@ -107,7 +107,7 @@ public class Frag3 extends Fragment {
 
         Item person1 = new Item(R.drawable.profile, "이재완 상담사", "안녕하세요.", "7월 12일");
         Item person2 = new Item(R.drawable.profile, "홍현지 멘토", "어떤 부분에서 멘토링을...", "오후 1시 14분");
-        Item person3 = new Item(R.drawable.profile, "임종호 상담사", "저번에 했던 상담은 괜찮나요... ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ", "7월 8일");
+        Item person3 = new Item(R.drawable.profile, "임종호 상담사", "저번에 했던 상담은 괜찮나요...", "7월 8일");
         Item person4 = new Item(R.drawable.profile, "이나경 상담사", "처음 뵙습니다~", "8월 10일");
         Item person5 = new Item(R.drawable.profile, "이찬규 멘토", "상담 결과는 만족스럽나요?", "오전 10시 7분");
         Item person6 = new Item(R.drawable.profile, "김유진 상담사", "다음에 언제 시간이 되시나요...", "12월 25일");
