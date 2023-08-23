@@ -11,14 +11,15 @@
         android:text="채팅 목록"
         android:textSize="15sp"
         android:textColor="@color/black"
-        android:layout_marginTop="67dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
 
     <ListView
         android:id="@+id/listview_chat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@android:dimen/app_icon_size">
     </ListView>
 
 </LinearLayout>
