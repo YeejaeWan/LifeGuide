@@ -20,24 +20,27 @@ import java.util.ArrayList;
 
 
 class Item {
-    private int image;
-    private String name;
+    final private int image;
+    final private String name;
+    final private String message;
 
     public int getImage(){return image;}
     public String getName(){return name;}
+    public String getMessage(){return message;}
 
-    public Item(int image, String name){
+    public Item(int image, String name, String message){
         this.image = image;
         this.name = name;
+        this.message = message;
     }
 }
 
 
 class Frag3Adapter extends BaseAdapter {
 
-    private LayoutInflater inflater;
-    private ArrayList<Item> data;
-    private int layout;
+    final private LayoutInflater inflater;
+    final private ArrayList<Item> data;
+    final private int layout;
 
     public Frag3Adapter(Context context, int layout, ArrayList<Item> data){
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -62,15 +65,23 @@ class Frag3Adapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
         if(convertView == null){
             convertView = inflater.inflate(layout,parent,false);
         }
 
         Item item = data.get(position);
+
+        // 아이템
         ImageView image = (ImageView)convertView.findViewById(R.id.image);
         image.setImageResource(item.getImage());
+
         TextView name = (TextView)convertView.findViewById(R.id.name);
         name.setText(item.getName());
+
+        TextView message = (TextView)convertView.findViewById(R.id.message);
+        message.setText(item.getMessage());
+
 
         return convertView;
     }
@@ -89,15 +100,13 @@ public class Frag3 extends Fragment {
         ListView listviewChat = view.findViewById(R.id.listview_chat);
         ArrayList<Item> data = new ArrayList<>();
 
-        Item person1 = new Item(R.drawable.person_image, "임종호");
-        Item person2 = new Item(R.drawable.person_image, "이재완");
-        Item person3 = new Item(R.drawable.person_image, "이찬규");
-        Item person4 = new Item(R.drawable.person_image, "ㅇㅇㅇ");
+        Item person1 = new Item(R.drawable.profile, "이재완 상담사", "안녕하세요.");
+        Item person2 = new Item(R.drawable.profile, "홍현지 멘토", "어떤 부분에서 멘토링을...");
+        Item person3 = new Item(R.drawable.profile, "임종호 상담사", "저번에 했던 상담은 괜찮으...");
 
         data.add(person1);
         data.add(person2);
         data.add(person3);
-        data.add(person4);
 
         Frag3Adapter adapter = new Frag3Adapter(getActivity(), R.layout.frag3_item, data);
 
