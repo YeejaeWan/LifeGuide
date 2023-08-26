@@ -127,7 +127,7 @@ public class Frag3 extends Fragment {
         // 화면 전환
         listviewChat.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), ChatRoom.class);
                 startActivity(intent);
             }
