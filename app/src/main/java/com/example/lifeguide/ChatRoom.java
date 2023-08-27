@@ -3,8 +3,7 @@ package com.example.lifeguide;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageView;
 
 public class ChatRoom extends AppCompatActivity {
 
@@ -13,11 +12,12 @@ public class ChatRoom extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat_room);
 
-        EditText send_message = findViewById(R.id.send_message);
-        Button send_button = findViewById(R.id.send_button);
+        ImageView image1 = (ImageView)findViewById(R.id.image1);
+        image1.setImageResource(R.drawable.profile);
+
+        ImageView image3 = (ImageView)findViewById(R.id.image3);
+        image3.setImageResource(R.drawable.profile);
 
     }
-
-
 
 }

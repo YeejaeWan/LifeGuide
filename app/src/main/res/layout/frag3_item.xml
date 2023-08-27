@@ -47,7 +47,9 @@
             android:layout_height="match_parent"
             android:gravity="center|start"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
 
     </LinearLayout>
 
